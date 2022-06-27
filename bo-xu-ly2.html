@@ -1,0 +1,2950 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bộ xử lý</title>
+    <link rel="icon"  href="public/images/logo/LOGOCHINH2.png">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="vi" />
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta http-equiv="refresh" content="1800" />
+    
+    
+    <link rel="stylesheet" type="text/css" href="public/css/fonts/font.css">
+    <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="public/css/animate.css">
+    
+
+    <!-- link mobile  -->
+    <link rel="stylesheet" href="public/css/demo.css">
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="public/css/responsive.css">
+    <script type="text/javascript" src="public/js/jquery.min.js"></script>
+    <meta name="p:domain_verify" content="030e9cac5d986311fb7cb4d678d5afa5" />
+    <meta name="google-site-verification" content="5AjKoXJjYM4IypeLfcPVSSkGObQ9mCcsYb9_ZaenHkw" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HW1RN4KJZC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-HW1RN4KJZC');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Ads: 667520727 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-667520727"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-667520727');
+    </script>
+    <script type="text/javascript">
+        var BASE_URL = '';
+    </script>
+
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <div class="page-body-buong">
+        <style type="text/css" media="screen">
+            #footer-site .top-footer .item .nav-item-adress ul li .fa-facebook-f {
+                background: #3B5997;
+            }
+
+            #footer-site .top-footer .item .nav-item-adress ul li .fa-twitter {
+                background: #00ACF0;
+            }
+
+            #footer-site .top-footer .item .nav-item-adress ul li .fa-instagram {
+                background: #447397;
+            }
+
+            #footer-site .top-footer .item .nav-item-adress ul li .fa-youtube {
+                background: #D12E2E;
+            }
+
+            #footer-site .top-footer .item .nav-item-adress ul li .fa-google {
+                background: #DB4F48;
+            }
+
+            .css-icon-plus {
+                padding: 10px;
+                position: absolute;
+                right: 0px;
+                display: none;
+                top: 0px;
+            }
+
+            .fillter_bl .content_fillter [class^="group-fillter fill-key-"] .attribute-title {
+                position: relative;
+            }
+
+            .fillter_bl .content_fillter [class^="group-fillter fill-key-"] .attribute-title:after {
+                content: "\f067";
+                font-size: 13px;
+                /* color: rgba(255,235,59,.64); */
+                font: normal normal normal 14px/1 FontAwesome;
+                position: absolute;
+                right: 10px;
+                top: 12px;
+                transition: all .3s;
+            }
+
+            .fillter_bl .content_fillter [class^="group-fillter fill-key-"] .attribute-title.show:after {
+                content: "\f068";
+            }
+
+            .fillter_bl .content_fillter [class^="group-fillter fill-key-"] .attribute-group {
+                display: none;
+            }
+
+            @media (max-width: 768px) {
+                .mobile-display-none {
+                    display: none;
+                }
+
+                .css-icon-plus {
+                    display: block;
+                }
+
+                .vertical-dropdown-menu {
+                    display: none;
+                }
+
+                .slider-large .item img {
+                    height: auto !important;
+                }
+
+                .slider-large .owl-prev {
+                    right: 0px;
+                    background: transparent;
+                    width: 27px;
+                    height: 27px;
+                }
+
+                .slider-large .owl-next {
+                    right: 0px;
+                    background: transparent;
+                    width: 27px;
+                    height: 27px;
+                }
+
+                .slider-large .owl-nav i {
+                    width: 27px;
+                    height: 27px;
+                    line-height: 27px;
+                }
+
+                .content-detail-new img {
+                    height: auto !important;
+                    width: 100% !important;
+                }
+            }
+
+            .content-product .nav-product .add-cart {
+                transform: scale(0, 0);
+                position: absolute;
+                bottom: 45px;
+                width: 100%;
+                text-align: center;
+                transition: .3s;
+            }
+
+            .content-product.home-first .nav-product .add-cart {
+                bottom: 25px;
+            }
+
+            .content-product .nav-product .item-product {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+
+            .content-product .nav-product .item-product:hover .add-cart {
+                transform: scale(1, 1);
+            }
+
+            .content-product .nav-product .item-product:hover .price-c {
+                transform: scale(0, 0);
+            }
+
+            .content-product .nav-product .item-product .price-c .price {
+                padding: 0px;
+            }
+
+            .content-product .nav-product .item-product .price-c {
+                order: 3;
+                transition: .3s;
+                text-align: left;
+                font-family: Roboto, sans-serif;
+                transform: scale(1, 1);
+            }
+
+            .content-product .nav-product .item-product .price-c * {
+                font-family: 'Roboto-Bold' !important;
+                font-weight: bold;
+                font-size: 20px;
+                text-shadow: 0px 0px #b2b2b2;
+            }
+
+            .content-product .nav-product .item-product .price-c .gia-cu {
+                font-size: 16px;
+                color: rgba(0, 0, 0, .2);
+                font-family: 'Roboto', sans-serif !important;
+                font-weight: 400;
+            }
+
+            .content-product .nav-product .item-product .price-c {
+                position: relative;
+            }
+
+            .content-product .nav-product .item-product .price-c .sale-off-show {
+                position: absolute;
+                top: 17px;
+                right: 0;
+                background-image: url('public/images/sale1.png');
+                background-size: contain;
+                font-size: 11px;
+                padding: 10px 0px;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+            }
+
+            #main-menu1 ul {
+                display: inline;
+            }
+
+            #main-menu1 ul li {
+                padding:  0;
+            }
+
+            #main-menu1 ul li:hover {
+                background: linear-gradient(#65562e -16%, #797143 47%, #787142 82%);
+            }
+
+            #main-menu1 ul li:hover p {
+                color: #fff;
+            }
+
+            div.adfloat {
+                top: 150px !important;
+            }
+
+            .content-product .nav-product .item-product .price-c .css-size-d {
+                font-size: 17px;
+            }
+
+            .sidebar .nav-product-sb .item .price span.css-price-d {
+                font-size: 14px;
+                padding: 0px;
+                color: #c80000;
+                font-family: 'Roboto-Bold';
+            }
+
+            .sidebar .nav-product-sb .item .price {
+                font-size: 15px;
+            }
+
+            @media (min-width: 768px) {
+                .main-logo-shop>.container>.row>.col-md-2.col-xs-12 {
+                    padding-left: 40px;
+                    text-align: center;
+                }
+            }
+
+            .main-slider .owl-prev,
+            .main-slider .owl-next {
+                background: initial;
+            }
+
+            .main-slider .owl-prev {
+                display: block;
+            }
+
+            .main-slider .owl-nav i {
+                background: initial;
+            }
+
+            .slider-sale .col-md-6.col-sm-6.col-xs-12.col-edit-2 {
+                padding-left: 3px;
+            }
+        </style>
+        <header id="header-site" class="header">
+            
+            <div class="top-header up-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="item-top left-top">
+                                <ul class="ho-tro">
+                                    <li><i class="fa fa-mobile"></i><a href="#" rel="nofollow"> Hỗ trợ trực tuyến</a>
+                                        <ul class="ht-child" align ="center">
+                                            <li>
+                                                <div class="title">
+                                                    <h2><span style="font-family:Times New Roman,Times,serif;"><span
+                                                                style="font-size:20px;"><strong><span
+                                                                        style="color:#ff0000;">  HOTLINE: 0702.602.635 -
+                                                                        0915.101.664</span></strong></span></span></h2>
+
+                                                    <h4><span style="font-family:Times New Roman,Times,serif;"><strong><span
+                                                                    style="color:#2c3e50;"><u>Bán Hàng
+                                                                        Online:</u></span></strong></span></h4>
+
+                                                    <p><span style="font-family:Times New Roman,Times,serif;">Mr. Thanh Ba -
+                                                                    0702.602.635</span></p>
+
+                                                    <p><span style="font-family:Times New Roman,Times,serif;">Mr. Chính Đạt -
+                                                                    0915.101.664</span></p>
+
+                                                    <h4><span style="font-family:Times New Roman,Times,serif;"><strong><span
+                                                                    style="color:#2c3e50;"><u>Hỗ Trợ Kĩ Thuật:
+                                                                        0702.602.635</u></span></strong></span></h4>
+
+                                                    <p><span style="font-family:Times New Roman,Times,serif;">Mr. Chính Đạt -
+                                                                    0915.101.664</span></p>
+
+                                                    <h4><span style="font-family:Times New Roman,Times,serif;"><strong><u>Tiếp
+                                                                    Nhận Trả Bảo Hành: 0702.602.635</u></strong></span>
+                                                    </h4>
+
+                                                    <h4><span style="font-family:Times New Roman,Times,serif;"><strong><span
+                                                                    style="color:#2c3e50;"><u>Kế Toán:
+                                                                        0702.602.635</u></span></strong></span></h4>
+
+                                                    <p><span style="font-family:Times New Roman,Times,serif;">Ms. Ba
+                                                            - 0702.602.635</span></p>
+
+                                                    <p><span style="font-family:Times New Roman,Times,serif;">Ms. Dat 
+                                                             - 0915.101.664</span></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="item-top right-top">
+                                <ul>
+                                    <li > <a href="#"> <i class="fa-solid fa-user"></i></a> </li>
+                                    <li > <a href="bo-xu-ly.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Đăng xuất</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-logo-shop">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            <a href="index2.html" class="logo"><img src="public/images/logo/LOGOCHINH2.png"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-10 col-sm-12 col-xs-12">
+                            <div class="search-shop-holine">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="search">
+                                            <form action="tim-kiem.html" method="get" id="searchForm" class="form">
+                                                <input type="text" name="key" class="keyword"
+                                                    placeholder="Nhập từ khóa tìm kiếm">
+                                                <input type="submit" value="Tìm kiếm">
+                                                <div class="searchResult"></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript">
+                                        $(function () {
+                                            $('#searchForm').on('submit', function () {
+                                                var keyword = $('.keyword').val();
+                                                if (keyword == '') {
+                                                    alert('Bạn phải nhập từ khóa');
+                                                    return false;
+                                                }
+                                            });
+                                        });
+                                    </script>
+                                    <div class="col-md-2">
+                                        <div class="cart">
+                                            <a href="dat-mua.html" rel="nofollow"><img src="public/images/products/shop.png"
+                                                    alt="">Giỏ hàng
+                                                (<span class="stt" id="total-cart">0</span>)</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="holine">
+                                            <span class="title-holine" style="font-size: 18px;" >Hotline</span>
+                                            <span class="phone-holine" style="font-size: 22px;">0702.602.635</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="main-menu">
+        <div class="container">
+                        <ul>
+                                <li>
+                    <a href=".">Trang chủ</a>
+                                    </li>
+                                <li>
+                    <a href="/">Giới thiệu</a>
+                                    </li>
+                                <li>
+                    <a href="tat-ca.html">Sản phẩm</a>
+                                        <ul class="sub-menu">
+                                                <li>
+                            <a href="gaming-gear-cooling.html">GAMING GEAR, COOLING</a>
+                        </li>
+                                                <li>
+                            <a href="thiet-bi-van-phong.html">THIẾT BỊ VĂN PHÒNG</a>
+                        </li>
+                                                <li>
+                            <a href="thiet-bi-mang.html">THIẾT BỊ MẠNG</a>
+                        </li>
+                                                <li>
+                            <a href="thiet-bi-luu-tru.html">THIẾT BỊ LƯU TRỮ</a>
+                        </li>
+                                                <li>
+                            <a href="laptop-va-phu-kien.html">LAPTOP VÀ PHỤ KIỆN</a>
+                        </li>
+                                                <li>
+                            <a href="pc-workstation.html">PC - WORKSTATION</a>
+                        </li>
+                                                <li>
+                            <a href="pc-gaming.html">PC GAMING</a>
+                        </li>
+                                                <li>
+                            <a href="game-computer-may-van-phong.html">GAME COMPUTER - MÁY VĂN PHÒNG</a>
+                        </li>
+                                                <li>
+                            <a href="linh-kien-may-tinh.html">LINH KIỆN MÁY TÍNH</a>
+                        </li>
+                                            </ul>
+                                    </li>
+                                <li>
+                    <a href="danh-sach-tin-tuc.html">TIN TỨC - CÔNG NGHỆ</a>
+                                    </li>
+                                <li>
+                    <a href="tin-tuc.html">Dịch vụ</a>
+                                    </li>
+                                <li>
+                    <a href="lien-he.html">Liên hệ</a>
+                                    </li>
+                                <li>
+                    <a href="xay-dung-cau-hinh.html">Xây dựng cấu hình</a>
+                                    </li>
+                            </ul>
+                    </div>
+    </div> -->
+    <div class="category-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 col-xs-12 col-edit-1">
+                    <div class="relative-category">
+                        <div class="top-category">
+                            <h3 class="title-category">DANH MỤC SẢN PHẨM<i class="fa fa-bars"></i></h3>
+                        </div>
+                        <div class="nav-category-home ">
+                            <ul>
+                                <li>
+                                    <a href="pc-do-hoa2.html" style="width: calc(100% - 30px);"><img src="public/images/logo/img-495041.png" alt="PC WORKSTATION">PC
+                                        WORKSTATION</a>
+                                    <i class="fa fa-plus css-icon-plus cssssss" style="max-width: 30px;"></i>
+                                    <div class="vertical-dropdown-menu">
+                                        <div class="row">
+                                            <div class="vertical-groups">
+                                                <div class="mega-group">
+                                                    <!-- <h4 class="mega-group-header"><span>Thương hiệu</span></h4> -->
+                                                    <ul class="group-link-default">
+                                                        <li><a href="pchl-intel-workstation.html">PC INTEL
+                                                                WORKSTATION</a></li>
+                                                        <li><a href="pchl-amd-workstation.html">PC AMD
+                                                                WORKSTATION</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="bo-xu-ly2.html" style="width: calc(100% - 30px);"><img src="public/images/logo/cpu.jpg" alt="CPU - BỘ VI XỬ LÝ">CPU - BỘ
+                                        VI
+                                        XỬ LÝ</a>
+                                    <i class="fa fa-plus css-icon-plus cssssss" style="max-width: 30px;"></i>
+                                    <div class="vertical-dropdown-menu">
+                                        <div class="row">
+                                            <div class="vertical-groups">
+                                                <div class="mega-group">
+                                                    <h4 class="mega-group-header"><span>Thương hiệu</span></h4>
+                                                    <ul class="group-link-default">
+                                                        <li><a href="cpu-intel2.html">CPU Intel</a></li>
+                                                        <li><a href="cpu-amd2.html">CPU AMD</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" ><img src="public/images/logo/computer-game-computer-game-gaming-pc-playing-18.png" alt="PC GAMING">PC GAMING</a>
+                                </li>
+                                <li>
+                                    <a href="main-bo-mach-chu.html" ><img src="public/images/logo/mainboard.png" alt="MAINBOARD - BO MẠCH CHỦ">MAINBOARD - BO MẠCH CHỦ</a>
+                                </li>
+                                <li>
+                                    <a href="vga-card-man-hinh.html" ><img src="public/images/logo/vga.png" alt="VGA - CARD MÀN HÌNH">VGA -
+                                        CARD MÀN HÌNH</a>
+                                </li>
+                                <li>
+                                    <a href="linh-kien-may-tinh.html" style="width: calc(100% - 30px);"><img src="public/images/logo/computer-chip2-2-512.png" alt="LINH KIỆN MÁY TÍNH">LINH KIỆN MÁY TÍNH</a>
+                                    <i class="fa fa-plus css-icon-plus cssssss" style="max-width: 30px;"></i>
+                                    <div class="vertical-dropdown-menu">
+                                        <div class="row">
+                                            <div class="vertical-groups">
+                                                <div class="mega-group">
+                                                    <!-- <h4 class="mega-group-header"><span>Thương hiệu</span></h4> -->
+                                                    <ul class="group-link-default">
+                                                        <li><a href="ram-bo-nho-trong.html">RAM - BỘ NHỚ
+                                                                TRONG</a></li>
+                                                        <li><a href="ssd-o-cung-the-ran.html">SSD - Ổ CỨNG THỂ
+                                                                RẮN</a></li>
+                                                        <li><a href="hdd-o-cung-luu-tru.html">HDD - Ổ CỨNG</a>
+                                                        </li>
+                                                        <li><a href="psu-nguon-may-tinh.html">PSU - NGUỒN MÁY
+                                                                TÍNH</a></li>
+                                                        <li><a href="case-vo-may-tinh.html">CASE - VỎ MÁY
+                                                                TÍNH</a></li>
+                                                        <li><a href="monitor-man-hinh-may-tinh.html">MONITOR -
+                                                                MÀN HÌNH MÁY TÍNH</a></li>
+                                                        <li><a href="keyboard-ban-phim.html">KEYBOARD - BÀN
+                                                                PHÍM</a></li>
+                                                        <li><a href="mouse-chuot.html">MOUSE - CHUỘT</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="man-hinh-may-tinh.html" ><img src="public/images/logo/kisspng-imac-computer-icons-desktop-computers-monitors-5ad21ec6060fd8.1982121415237198780248.jpg" alt="MÀN HÌNH MÁY TÍNH">MÀN HÌNH MÁY TÍNH</a>
+                                </li>
+                                <li>
+                                    <a href="gaming-gear-cooling.html" style="width: calc(100% - 30px);"><img src="public/images/logo/kisspng-computer-keyboard-computer-icons-vector-graphics-c-shortcut-key-svg-png-icon-free-download-14-333-5c684fd0b7feb9.0934393015503400487537.png" alt="TẢN NHIỆT - GAMING GEAR">TẢN NHIỆT - GAMING GEAR</a>
+                                    <i class="fa fa-plus css-icon-plus cssssss" style="max-width: 30px;"></i>
+                                    <div class="vertical-dropdown-menu">
+                                        <div class="row">
+                                            <div class="vertical-groups">
+                                                <div class="mega-group">
+                                                    <!-- <h4 class="mega-group-header"><span>Thương hiệu</span></h4> -->
+                                                    <ul class="group-link-default">
+                                                        <li><a href="chuot-game.html">CHUỘT GAME</a></li>
+                                                        <li><a href="ban-phim-game.html">BÀN PHÍM GAME</a></li>
+                                                        <li><a href="tai-nghe-game.html">TAI NGHE GAME</a></li>
+                                                        <li><a href="ban-di-chuot.html">BÀN DI CHUỘT</a></li>
+                                                        <li><a href="tan-nhiet-cpu.html">TẢN NHIỆT CPU</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="thiet-bi-luu-tru.html" style="width: calc(100% - 30px);"><img src="public/images/logo/paintball-bag-case-storage-equipment-128.png" alt="THIẾT BỊ LƯU TRỮ">THIẾT BỊ LƯU TRỮ</a>
+                                    <i class="fa fa-plus css-icon-plus cssssss" style="max-width: 30px;"></i>
+                                    <div class="vertical-dropdown-menu">
+                                        <div class="row">
+                                            <div class="vertical-groups">
+                                                <div class="mega-group">
+                                                    <!-- <h4 class="mega-group-header"><span>Thương hiệu</span></h4> -->
+                                                    <ul class="group-link-default">
+                                                        <li><a href="thiet-bi-luu-tru-usb.html">THIẾT BỊ LƯU TRỮ
+                                                                USB</a></li>
+                                                        <li><a href="o-cung-gan-ngoai.html">Ổ CỨNG GẮN NGOÀI</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="thiet-bi-mang.html" style="width: calc(100% - 30px);"><img src="public/images/logo/phat-wifi.png" alt="THIẾT BỊ MẠNG">THIẾT BỊ
+                                        MẠNG</a>
+                                    <i class="fa fa-plus css-icon-plus cssssss" style="max-width: 30px;"></i>
+                                    <div class="vertical-dropdown-menu">
+                                        <div class="row">
+                                            <div class="vertical-groups">
+                                                <div class="mega-group">
+                                                    <!-- <h4 class="mega-group-header"><span>Thương hiệu</span></h4> -->
+                                                    <ul class="group-link-default">
+                                                        <li><a href="switch.html">SWITCH</a></li>
+                                                        <li><a href="thiet-bi-mang-khong-day.html">THIẾT BỊ MẠNG
+                                                                KHÔNG DÂY</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-12 col-xs-12 col-edit-4">
+                    <div id="main-menu1">
+                        <ul>
+                            <li style="width: calc(100% / 4)">
+                                <a href="pc-do-hoa2.html">
+                                    <div class="nav_horizontal_item">
+                                        <div class="nav_horizontal_text">
+                                            <p class="newBigText">PC Đồ Họa
+                                        </p></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li style="width: calc(100% / 4)">
+                                <a href="bo-xu-ly2.html">
+                                    <div class="nav_horizontal_item">
+                                        <div class="nav_horizontal_text">
+                                            <p class="newBigText">CPU Cao Cấp
+                                        </p></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li style="width: calc(100% / 4)">
+                                <a href="giai-phap2.html">
+                                    <div class="nav_horizontal_item">
+                                        <div class="nav_horizontal_text">
+                                            <p class="newBigText">Giải Pháp
+                                        </p></div>
+                                    </div>
+                                </a>
+                                
+                            </li>
+                            <li style="width: calc(100% / 4)">
+                                <a href="tin-tuc2.html">
+                                    <div class="nav_horizontal_item">
+                                        <div class="nav_horizontal_text">
+                                            <p class="newBigText">Tin Tức
+                                        </p></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+        #main-menu1 ul li {
+            position: relative;
+        }
+
+        #main-menu1 ul.sub-menu {
+            display: none;
+            position: absolute;
+            width: 234px;
+            background-color: #333333;
+            top: 100%;
+            z-index: 999999;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        #main-menu1 ul.sub-menu i {
+            float: right;
+            color: #fff;
+        }
+
+        #main-menu1 ul.sub-menu.level3 {
+            top: 0%;
+            left: 100%;
+            display: none !important;
+        }
+
+        #main-menu1 ul.sub-menu li {
+            padding: 10px 15px;
+            border-bottom: 1px dashed #333333;
+        }
+
+        #main-menu1 ul.sub-menu li a {
+            color: #fff;
+        }
+
+        #main-menu1 ul.sub-menu li {
+            width: 100%;
+        }
+
+        #main-menu1 li:hover .sub-menu {
+            display: block;
+        }
+
+        #main-menu1 li:hover .sub-menu:hover {
+            display: block;
+        }
+
+        #main-menu1 ul.sub-menu li:hover ul.sub-menu.level3 {
+            display: block !important;
+        }
+
+        .hello {
+            display: block !important;
+        }
+
+        .css-icon-plus.cssssss {
+            display: block;
+        }
+
+        /*  .nav-category-home ul li:hover i.css-icon-plus.cssssss:before{
+            content: ;
+            } */
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".top-category").click(function () {
+                $(".nav-category-home").slideToggle();
+            });
+        });
+    </script>
+        </header>
+        
+
+        <div id="main" class="wrapper main-product">
+
+            <div class="bres">
+                <div class="container">
+                    <ul>
+                        <li><a href="">Trang chủ</a>/</li>
+                        <li>CPU - BỘ VI XỬ LÝ </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="main-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="sidebar wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                <div class="sidebar wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                    <div class="item-sb side-category">
+                                        <div class="category">
+                                            <h3 class="title" style="margin-top: 0px;"><i class="fa fa-bars"></i>CPU -
+                                                BỘ VI XỬ LÝ</h3>
+                                        </div>
+                                        <ul>
+                                            <li style="position: relative;">
+                                                <a  href="cpu-intel2.html" title="">CPU Intel</a>
+                                            </li>
+                                            <li style="position: relative;">
+                                                <a  href="cpu-amd2.html" title="">CPU AMD</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <style type="text/css" media="screen">
+                                    .fillter_bl .fa.fa-check {
+                                        position: absolute;
+                                        left: 12px;
+                                        top: 9px;
+                                        display: none;
+                                        color: green;
+                                        
+                                    }
+
+                                    .fillter-label.tpInputLabel.checked label::before {
+                                        border: 2px solid rgb(0, 0, 0) !important;
+                                    }
+
+                                    .fillter-label.tpInputLabel.checked label .fa.fa-check {
+                                        display: block;
+                                    }
+                                    .fillter-label.tpInputLabel .filter{
+                                        background-color: white !important;
+                                    }
+                                  
+                                </style>
+                                <div class="aside-fillter">
+                                    <section class="fillter_bl">
+                                        <div class="content_fillter">
+                                            <div class="group-fillter fill-key-0">
+                                                <div class="attribute-title">
+                                                    <label class="form-label tpInputLabel">Bảng giá</label>
+                                                </div>
+
+                                            </div>
+                                            <div class="group-fillter fill-key-0">
+                                                <div class="attribute-title">
+                                                    <label class="form-label tpInputLabel">Hãng Sản Xuất</label>
+                                                </div>
+                                                <div class="attribute-group">
+                                                    <label class="fillter-label tpInputLabel fill-line-0" data-line="fill-line-0">
+                                                        <input class="filter" type="checkbox" name="attr[type]" value="46" id="item-46">
+                                                        <label for="item-46"><i class="fa fa-check" aria-hidden="true"></i>Intel</label>
+                                                    </label>
+                                                    <label class="fillter-label tpInputLabel fill-line-0" data-line="fill-line-0">
+                                                        <input class="filter" type="checkbox" name="attr[type]" value="47" id="item-47">
+                                                        <label for="item-47"><i class="fa fa-check" aria-hidden="true"></i>AMD</label>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="group-fillter fill-key-1">
+                                                <div class="attribute-title">
+                                                    <label class="form-label tpInputLabel">Socket</label>
+                                                </div>
+                                                <div class="attribute-group">
+                                                    <label class="fillter-label tpInputLabel fill-line-1" data-line="fill-line-1">
+                                                        <input class="filter" type="checkbox" name="attr[socket]" value="61" id="item-61">
+                                                        <label for="item-61"><i class="fa fa-check" aria-hidden="true"></i>Intel LGA 1151</label>
+                                                    </label>
+                                                    <label class="fillter-label tpInputLabel fill-line-1" data-line="fill-line-1">
+                                                        <input class="filter" type="checkbox" name="attr[socket]" value="63" id="item-63">
+                                                        <label for="item-63"><i class="fa fa-check" aria-hidden="true"></i>AM4</label>
+                                                    </label>
+                                                    <label class="fillter-label tpInputLabel fill-line-1" data-line="fill-line-1">
+                                                        <input class="filter" type="checkbox" name="attr[socket]" value="64" id="item-64">
+                                                        <label for="item-64"><i class="fa fa-check" aria-hidden="true"></i>TR4</label>
+                                                    </label>
+                                                    <label class="fillter-label tpInputLabel fill-line-1" data-line="fill-line-1">
+                                                        <input class="filter" type="checkbox" name="attr[socket]" value="65" id="item-65">
+                                                        <label for="item-65"><i class="fa fa-check" aria-hidden="true"></i>Intel LGA 2066</label>
+                                                    </label>
+                                                    <label class="fillter-label tpInputLabel fill-line-1" data-line="fill-line-1">
+                                                        <input class="filter" type="checkbox" name="attr[socket]" value="66" id="item-66">
+                                                        <label for="item-66"><i class="fa fa-check" aria-hidden="true"></i>Intel LGA 2011</label>
+                                                    </label>
+                                                    <label class="fillter-label tpInputLabel fill-line-1" data-line="fill-line-1">
+                                                        <input class="filter" type="checkbox" name="attr[socket]" value="67" id="item-67">
+                                                        <label for="item-67"><i class="fa fa-check" aria-hidden="true"></i>Intel LGA 1150</label>
+                                                    </label>
+                                                    <label class="fillter-label tpInputLabel fill-line-1" data-line="fill-line-1">
+                                                        <input class="filter" type="checkbox" name="attr[socket]" value="185" id="item-185">
+                                                        <label for="item-185"><i class="fa fa-check" aria-hidden="true"></i>sTRX4</label>
+                                                    </label>
+                                                    <label class="fillter-label tpInputLabel fill-line-1" data-line="fill-line-1">
+                                                        <input class="filter" type="checkbox" name="attr[socket]" value="198" id="item-198">
+                                                        <label for="item-198"><i class="fa fa-check" aria-hidden="true"></i>Intel LGA 1200</label>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <form class="uk-hidden" id="Formfilter" method="post" action="" style="display: none;">
+                                    <input type="text" value="" name="attr" id="attr" class="confirm-filter">
+                                    <input type="text" value="1" name="page" id="page" class="">
+                                    <input type="text" value="97" name="cataloguesid" id="cataloguesid" class="">
+                                    <input type="submit" value="" name="submit" id="filter_submit" class="">
+                                </form>
+                                <script type="text/javascript">
+                                    $(document).ready(function () {
+
+                                        $('#Formfilter').on('submit', function (e) {
+                                            var attr = $('#attr').val();
+                                            var page = $('#page').val();
+                                            var cataloguesid = $('#cataloguesid').val();
+                                            var postData = $(this).serializeArray();
+                                            var formURL = 'products/ajax/products/filter';
+                                            $.post(formURL, {
+                                                post: attr, page: page, cataloguesid: cataloguesid
+                                            },
+                                                function (data) {
+                                                    var json = JSON.parse(data);
+                                                    if (json.html.length) {
+
+                                                        $('#list-filter-ajax').html('').html(json.html);
+                                                    } else {
+                                                        $('#list-filter-ajax').html('Không có dữ liệu phù hợp');
+                                                    }
+
+                                                });
+                                            return false;
+                                        });
+
+
+                                        $('.filter').change(function (e) {
+                                            var str = '';
+                                            $('.filter').each(function () {
+                                                if ($(this).val() != 0 && $(this).prop('checked') == true) {
+                                                    str = str + $(this).val() + '-';
+                                                }
+                                            });
+                                            if (str.length > 0) {
+                                                str = str.substr(0, str.length - 1);
+                                                $('#attr').val(str);
+                                            } else {
+                                                $('#attr').val('');
+                                            }
+                                            e.stopImmediatePropagation();
+                                            $('#filter_submit').click();
+                                        });
+
+                                        $('input.filter').click(function () {
+                                            var id = $(this).prop('id');
+                                            var name = $(this).prop('name');
+                                            $('input[name="' + name + '"]:not(#' + id + ')').prop('checked', false);
+                                        });
+
+
+                                    });
+                                    $(function () {
+                                        $('.tpInputLabel').on('click', function () {
+                                            var line = $(this).attr('data-line');
+                                            $('.' + line + '').removeClass('checked');
+                                            if ($(this).find('.filter').is(':checked')) {
+                                                $(this).addClass('checked');
+                                            } else {
+                                                $(this).removeClass('checked');
+                                            }
+                                        });
+                                    });
+                                    $(function () {
+                                        $(document).on('click', '#ajax-pagination li a', function (e) {
+                                            var page = $(this).attr('data-ci-pagination-page');
+                                            $('#page').val(page);
+                                            e.stopImmediatePropagation();
+                                            $('#filter_submit').click();
+                                            return false;
+                                        });
+                                    });
+                                </script>
+                                <style>
+                                    .content_fillter {
+                                        border: 1px solid #f0f0f0;
+                                    }
+
+                                    .attribute-title {
+                                        line-height: 34px;
+                                        color: #333;
+                                        border-bottom: solid 1px #ccc;
+                                        text-shadow: 1px 1px 0 #fff;
+                                        background: #eee;
+                                        font-weight: bold;
+                                        padding: 0 10px;
+                                        font-family: 'Roboto', sans-serif;
+                                        font-size: 16px;
+                                    }
+
+                                    .attribute-group {
+                                        padding: 5px 0;
+                                        background: #fff;
+                                    }
+
+                                    .attribute-group .fillter-label {
+                                        padding-left: 10px;
+                                        display: block;
+                                        line-height: 30px;
+                                        font-size: 13px;
+                                        position: relative;
+                                        height: 30px;
+                                        overflow: hidden;
+                                    }
+
+                                    .attribute-group .fillter-label label {
+                                        padding-left: 20px;
+                                        font-family: 'Roboto', sans-serif;
+                                    }
+
+                                    .attribute-group input[type="checkbox"] {
+                                        display: none;
+                                        
+                                    }
+
+                                    .fillter-label.tpInputLabel label::before {
+                                        height: 16px;
+                                        width: 16px;
+                                        border: 1px solid #ccc;
+                                        border-radius: 2px;
+                                        content: '';
+                                        display: block;
+                                        position: absolute;
+                                        left: 10px;
+                                        top: 8px;
+                                    }
+
+                                    .fillter-label.tpInputLabel.checked label::before {
+                                        background: url('public/images/checked.png');
+                                        border: 0;
+                                    }
+                                </style>
+                                <style type="text/css" media="screen">
+                                    .side-category .title {
+                                        background: linear-gradient(#dbd5c6 -16%  , #4c4b48 47%, #15120a 82%);
+                                        padding: 12px 15px;
+                                        font-weight: 600;
+                                        margin-bottom: 0px;
+                                    }
+
+                                    .side-category .title i {
+                                        margin-right: 7px;
+                                    }
+
+                                    .side-category ul {
+                                        background-color: #040404;
+                                        list-style: none;
+                                        padding: 0px;
+                                        margin: 0px;
+                                    }
+
+                                    .side-category ul li {
+                                        color: #fff;
+                                        padding: 10px 15px;
+                                        border-bottom: 1px dashed #333333;
+                                    }
+
+                                    .side-category ul li i {
+                                        float: right;
+                                    }
+
+                                    .side-category ul li a {
+                                        color: #fff;
+                                        text-transform: uppercase;
+                                    }
+
+                                    .side-category ul.sub {
+                                        position: absolute;
+                                        width: 250px;
+                                        z-index: 999;
+                                        left: 100%;
+                                        top: 0%;
+                                        display: none;
+                                    }
+
+                                    .side-category ul li:hover>a,
+                                    .side-category ul li:hover>i {
+                                        color: #b1a662;
+                                    }
+
+                                    .side-category ul li:hover>ul {
+                                        display: block;
+                                    }
+
+                                    @media (max-width: 600px) {
+                                        .side-category ul.sub {
+                                            display: none !important;
+                                        }
+
+                                        .side-category ul li i {
+                                            display: none !important;
+                                        }
+                                    }
+                                    .category{
+                                        color: #fff;
+                                    }
+                                </style>
+                                <div class="sidebar wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                    <div class="item-sb">
+                                        <div class="support item">
+                                            <div class="images">
+                                                <img src="public/images/suport.png" alt="">
+                                            </div>
+                                            <div class="holine">
+                                                <div class="icon">
+                                                    <img src="public/images/icon-holine.png" alt="">
+                                                </div>
+                                                <div class="nav-icon">
+                                                    <span class="sp1">Hotline</span>
+                                                    <span class="sp2" style="font-weight: bold;">0702.602.635</span>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="item-sb">
+                                        <h3 class="title-sb">
+                                            Sản Phẩm
+                                        </h3>
+                                        <div class="nav-product-sb">
+                                            <div class="item">
+                                                <div class="image">
+                                                    <a href="pc-intel-i7-10700-ram-16gb-rtx-2060-6gb.html"><img src="public/images/products/untitled-29.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="nav-image">
+                                                    <h3 class="title"><a href="">CPU G3250 ( 3Mb/3.2Ghz/1150) Box</a>
+                                                    </h3>
+                                                    <p class="price">
+                                                        23,100,000 <span class="css-price-d"></span><span>27,600,000</span>
+                                                        
+                                                    </p>
+                                                    <a href="" class="readmore">Xem chi tiết<i class="fas fa-angle-right"></i></a>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sb">
+                                        <h3 class="title-sb">
+                                            Tin tức
+                                        </h3>
+                                        <div class="nav-right-new">
+                                            <div class="item">
+                                                <div class="image">
+                                                    <a href="tintuc-so1-2.html"><img src="public/images/products/amd-ryzen-5000-zen-3-vermeer.jpg" alt="CPU AMD Ryzen 7 5800X nhanh hơn cả Intel Core i9-10900K ?">
+                                                    </a>
+                                                </div>
+                                                <div class="nav-img">
+                                                    <h3 class="title"><a href="tintuc-so1-2.html">CPU
+                                                            AMD Ryzen 7 5800X nhanh hơn cả Intel Core i9-10900K ?</a>
+                                                    </h3>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <div class="nav-main-content">
+                                <div class="content-product">
+                                    <div class="title-primary wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                        <h1 class="title1">CPU - BỘ VI XỬ LÝ</h1>
+                                    </div>
+                                    <div class="nav-product" id="list-filter-ajax">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img">
+                                                            <img src="public/images/products/9900.jpg" alt="CPU Intel Core i9-9900 (3.1 GHz turbo upto 5.0GHz/ 8 nhân 16 luồng/ 16MB/ Coffee Lake)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">10,000,000 đ</span>
+                                                            <br><span class="gia-moi">8,500,000<span class="css-size-d">
+                                                                    đ</span></span>
+                                                        </p>
+                                                        <div class="sale-off-show">-11,5%</div>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU
+                                                            Intel Core i9-9900 (3.1 GHz turbo upto 5.0GHz/ 8 nhân 16
+                                                            luồng/ 16MB/ Coffee Lake) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="787" data-price="8500000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="787" data-price="8500000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img">
+                                                            <img src="public/images/products/ryzen-9-5950x.jpg" alt="CPU AMD Ryzen 9 5950X (3.4 GHz Upto 4.9GHz / 72MB / 16 Cores, 32 Threads / 105W / Socket AM4)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">.-</span>
+                                                            <br><span class="gia-moi">20,899,000<span class="css-size-d"> đ</span></span>
+                                                        </p>
+                                                    </div>
+                                                    <h3 class="title"><a href="cpu-amd-ryzen-9-5950x.html">CPU AMD Ryzen
+                                                            9 5950X (3.4 GHz Upto 4.9GHz / 72MB / 16 Cores, 32 Threads /
+                                                            105W / Socket AM4) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="735" data-price="20899000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="735" data-price="20899000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/5900x.jpg" alt="CPU AMD Ryzen 9 5900X (3.7 GHz Upto 4.8GHz / 70MB / 12 Cores, 24 Threads / 105W / Socket AM4)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">.-</span>
+                                                            <br><span class="gia-moi">14,299,000<span class="css-size-d"> đ</span></span>
+                                                        </p>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU
+                                                            AMD Ryzen 9 5900X (3.7 GHz Upto 4.8GHz / 70MB / 12 Cores, 24
+                                                            Threads / 105W / Socket AM4) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="734" data-price="14299000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="734" data-price="14299000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/5800x.jpg" alt="CPU AMD Ryzen 7 5800X (3.8 GHz Upto 4.7GHz / 36MB / 8 Cores, 16 Threads / 105W / Socket AM4)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">.-</span>
+                                                            <br><span class="gia-moi">11,599,000<span class="css-size-d"> đ</span></span>
+                                                        </p>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU AMD Ryzen
+                                                            7 5800X (3.8 GHz Upto 4.7GHz / 36MB / 8 Cores, 16 Threads /
+                                                            105W / Socket AM4) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="733" data-price="11599000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="733" data-price="11599000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/ryzen-5-5600x.jpg" alt="CPU AMD Ryzen 5 5600X (3.7 GHz Upto 4.6GHz / 35MB / 6 Cores, 12 Threads / 65W / Socket AM4)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">.-</span>
+                                                            <br><span class="gia-moi">7,899,000<span class="css-size-d">
+                                                                    đ</span></span>
+                                                        </p>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU AMD Ryzen
+                                                            5 5600X (3.7 GHz Upto 4.6GHz / 35MB / 6 Cores, 12 Threads /
+                                                            65W / Socket AM4) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="732" data-price="7899000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="732" data-price="7899000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/intel-core-i9-10900k-10c-20t-20mb-3.70-5.30-ghz-avengers-edition-box-chinh-hang.jpg" alt="CPU Intel Core i9 10900K Avengers Edition (3.7GHz turbo up to 5.3GHz, 10 nhân 20 luồng, 20MB Cache, 125W)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">.-</span>
+                                                            <br><span class="gia-moi">13,990,000<span class="css-size-d"> đ</span></span>
+                                                        </p>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU
+                                                            Intel Core i9 10900K Avengers Edition (3.7GHz turbo up to
+                                                            5.3GHz, 10 nhân 20 luồng, 20MB Cache, 125W) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="717" data-price="13990000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="717" data-price="13990000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/cpu-intel-core-i7-10700k-avengers-edition-01.jpg" alt="CPU Intel Core i7 10700K Avengers Edition (3.8GHz turbo up to 5.1GHz, 8 nhân 16 luồng, 16MB Cache, 125W)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">10,900,000 đ</span>
+                                                            <br><span class="gia-moi">10,599,000<span class="css-size-d"> đ</span></span>
+                                                        </p>
+                                                        <div class="sale-off-show">-3%</div>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU
+                                                            Intel Core i7 10700K Avengers Edition (3.8GHz turbo up to
+                                                            5.1GHz, 8 nhân 16 luồng, 16MB Cache, 125W) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="694" data-price="10599000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="694" data-price="10599000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/cpu-intel-core-i9-10850k-avengers-edition-02.jpg" alt="CPU Intel Core i9 10850K Avengers Edition (3.6GHz turbo up to 5.2GHz, 10 nhân 20 luồng, 20MB Cache, 95W)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">12,950,000 đ</span>
+                                                            <br><span class="gia-moi">12,690,000<span class="css-size-d"> đ</span></span>
+                                                        </p>
+                                                        <div class="sale-off-show">-2%</div>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU
+                                                            Intel Core i9 10850K Avengers Edition (3.6GHz turbo up to
+                                                            5.2GHz, 10 nhân 20 luồng, 20MB Cache, 95W) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="693" data-price="12690000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="693" data-price="12690000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/cpu-ryzen-3600xt.jpg" alt="CPU AMD Ryzen 5 3600XT (3.8 GHz turbo upto 4.5GHz / 35MB / 6 Cores, 12 Threads / 95W / Socket AM4)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">.-</span>
+                                                            <br><span class="gia-moi">6,390,000<span class="css-size-d">
+                                                                    đ</span></span>
+                                                        </p>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU
+                                                            AMD Ryzen 5 3600XT (3.8 GHz turbo upto 4.5GHz / 35MB / 6
+                                                            Cores, 12 Threads / 95W / Socket AM4) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="685" data-price="6390000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="685" data-price="6390000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/cpu-intel-core-i9-10850k.jpg" alt="CPU Intel Core i9 10850K (3.6GHz turbo up to 5.2GHz, 10 core 20 Threads , 20MB Cache)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">.-</span>
+                                                            <br><span class="gia-moi">12,890,000<span class="css-size-d"> đ</span></span>
+                                                        </p>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU
+                                                            Intel Core i9 10850K (3.6GHz turbo up to 5.2GHz, 10 core 20
+                                                            Threads , 20MB Cache) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="683" data-price="12890000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="683" data-price="12890000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/3800xt.png" alt="CPU AMD Ryzen 7 3800XT (3.8GHz Boost 4.7GHz /8cores / 16 threads / 32MB Cache; 105W; Socket AM4)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">.-</span>
+                                                            <br><span class="gia-moi">10,290,000<span class="css-size-d"> đ</span></span>
+                                                        </p>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU
+                                                            AMD Ryzen 7 3800XT (3.8GHz Boost 4.7GHz /8cores / 16 threads
+                                                            / 32MB Cache; 105W; Socket AM4) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="676" data-price="10290000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="676" data-price="10290000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/3900xt.png" alt="CPU AMD Ryzen 9 3900XT (3.8GHz Boost 4.7GHz /12 cores / 24 threads / 64MB Cache; 105W; Socket AM4)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">.-</span>
+                                                            <br><span class="gia-moi">12,900,000<span class="css-size-d"> đ</span></span>
+                                                        </p>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU
+                                                            AMD Ryzen 9 3900XT (3.8GHz Boost 4.7GHz /12 cores / 24
+                                                            threads / 64MB Cache; 105W; Socket AM4) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="675" data-price="12900000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="675" data-price="12900000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/52615-intel-core-i3-10100.jpg" alt="CPU Intel Core i3 10100 (3.6GHz turbo up to 4.3GHz, 4 nhân 8 luồng, 6MB Cache, 65W)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">3,390,000 đ</span>
+                                                            <br><span class="gia-moi">3,090,000<span class="css-size-d">
+                                                                    đ</span></span>
+                                                        </p>
+                                                        <div class="sale-off-show">-9%</div>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU
+                                                            Intel Core i3 10100 (3.6GHz turbo up to 4.3GHz, 4 nhân 8
+                                                            luồng, 6MB Cache, 65W) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="601" data-price="3090000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="601" data-price="3090000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/10400.jpg" alt="CPU Intel Core i5 10400 (2.9 GHz turbo up to 4.3 GHz, 6 core 12 Threads , 12MB Cache, 65W)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">5,550,000 đ</span>
+                                                            <br><span class="gia-moi">4,890,000<span class="css-size-d">
+                                                                    đ</span></span>
+                                                        </p>
+                                                        <div class="sale-off-show">-12%</div>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU Intel
+                                                            Core i5 10400 (2.9 GHz turbo up to 4.3 GHz, 6 core 12
+                                                            Threads , 12MB Cache, 65W) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="449" data-price="4890000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="449" data-price="4890000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/10700.jpg" alt="CPU Intel Core i7 10700K (3.8GHz turbo up to 5.1GHz, 8 core 16 Threads , 16MB Cache, 125W)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">10,190,000 đ</span>
+                                                            <br><span class="gia-moi">10,590,000<span class="css-size-d"> đ</span></span>
+                                                        </p>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU Intel
+                                                            Core i7 10700K (3.8GHz turbo up to 5.1GHz, 8 core 16 Threads
+                                                            , 16MB Cache, 125W) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="448" data-price="10590000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="448" data-price="10590000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/10700.jpg" alt="CPU Intel Core i7 10700 (2.9GHz turbo up to 4.8GHz, 8 core 16 Threads , 16MB Cache, 65W)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">9,190,000 đ</span>
+                                                            <br><span class="gia-moi">8,990,000<span class="css-size-d">
+                                                                    đ</span></span>
+                                                        </p>
+                                                        <div class="sale-off-show">-2%</div>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU Intel
+                                                            Core i7 10700 (2.9GHz turbo up to 4.8GHz, 8 core 16 Threads
+                                                            , 16MB Cache, 65W) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="447" data-price="8990000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="447" data-price="8990000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/intel-core-i9-comet-lake-s.jpg" alt="CPU Intel Core i9 10900 (2.8GHz turbo up to 5.2GHz, 10 core 20 Threads , 20MB Cache, 65W)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">12,790,000 đ</span>
+                                                            <br><span class="gia-moi">12,490,000<span class="css-size-d"> đ</span></span>
+                                                        </p>
+                                                        <div class="sale-off-show">-2%</div>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU Intel
+                                                            Core i9 10900 (2.8GHz turbo up to 5.2GHz, 10 core 20 Threads
+                                                            , 20MB Cache, 65W) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="446" data-price="12490000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="446" data-price="12490000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/10900k(3).jpg" alt="CPU Intel Core i9 10900K (3.7GHz turbo up to 5.3GHz, 10 core 20 Threads , 20MB Cache, 125W)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">14,990,000 đ</span>
+                                                            <br><span class="gia-moi">13,990,000<span class="css-size-d"> đ</span></span>
+                                                        </p>
+                                                        <div class="sale-off-show">-7%</div>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU Intel
+                                                            Core i9 10900K (3.7GHz turbo up to 5.3GHz, 10 core 20
+                                                            Threads , 20MB Cache, 125W) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="445" data-price="13990000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="445" data-price="13990000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/10600k.jpg" alt="CPU Intel Core i5 10600K (4.1 GHz turbo up to 4.8 GHz, 6 core 12 Threads , 12MB Cache, 125W)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">7,900,000 đ</span>
+                                                            <br><span class="gia-moi">7,499,000<span class="css-size-d">
+                                                                    đ</span></span>
+                                                        </p>
+                                                        <div class="sale-off-show">-5%</div>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU Intel
+                                                            Core i5 10600K (4.1 GHz turbo up to 4.8 GHz, 6 core 12
+                                                            Threads , 12MB Cache, 125W) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="443" data-price="7499000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="443" data-price="7499000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                                <div class="item-product">
+                                                    <div class="image">
+                                                        <a href="" class="thubmail-img"><img src="public/images/products/10600.jpg" alt="CPU Intel Core i5 10600 (3.3GHz turbo up to 4.8 GHz, 6 core 12 Threads , 12MB Cache, 65W)">
+                                                        </a>
+                                                        <a href=""
+                                                            class="quick-view" data-link-action="quickview">
+                                                            <i class="material-icons search"></i> Quick view
+                                                        </a>
+                                                        <div class="new-pr"><img src="public/images/products/new.png" alt="">
+                                                        </div>
+                                                        <div class="sale-pr"><img src="public/images/products/sale.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-c">
+                                                        <p class="price"><span class="gia-cu">6,640,000 đ</span>
+                                                            <br><span class="gia-moi">5,990,000<span class="css-size-d">
+                                                                    đ</span></span>
+                                                        </p>
+                                                        <div class="sale-off-show">-10%</div>
+                                                    </div>
+                                                    <h3 class="title"><a href="">CPU Intel
+                                                            Core i5 10600 (3.3GHz turbo up to 4.8 GHz, 6 core 12 Threads
+                                                            , 12MB Cache, 65W) </a></h3>
+                                                    <div class="add-cart">
+                                                        <a href="" class="ajax-addtocart" data-quantity="1" data-id="442" data-price="5990000">Cho vào giỏ</a>
+                                                        <a href="" class="mh ajax-addtocart" data-redirect="redirect" data-quantity="1" data-id="442" data-price="5990000">Mua
+                                                            hàng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pagenavi">
+                                            <ul>
+                                                <li><a class="active">1</a>
+                                                    <a href="" data-ci-pagination-page="2" rel="start">2</a>
+                                                    <a href="" data-ci-pagination-page="3">3</a>
+                                                    <a href="" data-ci-pagination-page="2" rel="next">›</a>
+                                                    <a href="" data-ci-pagination-page="4"><i class="fa fa-angle-double-right"></i> </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="description" style="margin-bottom: 20px;">
+                                            <p style="text-align: justify;">CPU được ví như bộ não của con người điều
+                                                khiển mọi hoạt động của máy tính. Tuy nhiên, bạn có bao giờ đặt câu hỏi
+                                                CPU hoạt động như thế nào? Và cách thức hoạt động của nó ra sao? Hãy
+                                                cùng tụi mình tìm hiểu qua bài viết dưới đây nhé.&nbsp;</p>
+                                            <p style="text-align: justify;">Control Processing Unit viết tắt là CPU- bộ
+                                                xử lí trung tâm. Chức năng của CPU là xử lí và phân tích mọi dữ liệu khi
+                                                được nhập vào. Nó xử lí mọi yêu cầu của người dùng máy tính. CPU có hai
+                                                dòng chính là Intel và AMD.&nbsp;</p>
+                                            <h2 style="text-align: justify;"><strong>Những thành phần của CPU</strong>
+                                            </h2>
+                                            <p><strong>-&nbsp;</strong>Bộ điều khiển (Control Unit): Chức năng thông
+                                                dịch các lệnh của chương trình điều khiển.&nbsp;</p>
+                                            <p>- Bộ số học logic (ALU): Hiểu đơn giản đơn vị này thực hiện các công việc
+                                                tính toán số học và các phép so sánh lớn hơn, nhỏ hơn.</p>
+                                            <p>- Thanh ghi (Register): Ghi lại các tập lệnh trước và sau khi xử
+                                                lí.&nbsp;</p>
+                                            <h2><strong>CPU làm việc như thế nào?&nbsp;</strong></h2>
+                                            <p>-&nbsp;Chương trình đã được lưu trữ&nbsp;trên ổ cứng sẽ được truyền
+                                                vào&nbsp;RAM (bộ nhớ của máy tính). Chương trình là một loạt những tập
+                                                lệnh cho CPU.&nbsp;</p>
+                                            <p>-&nbsp;CPU dùng mạch điện tử để điều khiển bộ nhớ tải số liệu chương
+                                                trình từ RAM.</p>
+                                            <p>-&nbsp;Bây giờ dữ&nbsp;liệu đã bên trong CPU và được xử lí.&nbsp;</p>
+                                            <p>-&nbsp;Những gì xảy ra tiếp theo tuỳ thuộc vào chương trình.&nbsp;CPU có
+                                                thể tiếp tục tải dữ&nbsp;liệu để thực hiện chương trình hoặc làm
+                                                một&nbsp;việc gì đó để xử lí dữ&nbsp;liệu, ví dụ như hiển thị một cái gì
+                                                đó lên màn hình.</p>
+                                            <h2><strong>Các loại CPU phổ biến hiện nay&nbsp;&nbsp;</strong></h2>
+                                            <p>Hiện nay, tại cửa hàng tụi mình và các cửa hàng máy tính khác đều có hai loại
+                                                CPU của 2 nhà&nbsp;sản xuất lớn đó là Intel và AMD. Sự cạnh tranh này
+                                                đến từ 2 thương hiệu nổi tiếng trên thế giới đem đến cho người dùng
+                                                nhiều sự lựa chọn và trải nghiệm khác nhau.&nbsp;</p>
+                                            <h2><strong>CPU quan trọng như thế nào đối với máy tính&nbsp;</strong></h2>
+                                            <p>CPU đóng vai trong quan trọng trong việc làm cho máy tính của bạn chạy
+                                                nhanh hay không. Vì nó chịu trách nhiệm thực thi các lệnh trong chương
+                                                trình nên CPU của bạn càng khỏe, ứng dụng sẽ hoạt động càng nhanh.&nbsp;
+                                            </p>
+                                            <p>Nói CPU là tất cả thì không đúng mà nói CPU không quan trọng thì càng
+                                                không đúng. CPU nhanh đồng nghĩa với công việc của bạn sẽ nhanh chóng
+                                                được hoàn thành.&nbsp;</p>
+                                            <p>Các bạn đang có nhu cầu tìm hiểu về CPU hay một linh kiện máy tính nào
+                                                khác. Hãy liên hệ ngay đến cửa hàng tụi mình để được tư vấn chi tiết
+                                                nhất.&nbsp;</p>
+                                            <p style="text-align: justify;">&nbsp;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <style>
+            .quick-view {
+                font-size: 0;
+                height: 38px;
+                width: 42px;
+                display: inline-block;
+                vertical-align: top;
+                -webkit-transition: none;
+                -moz-transition: none;
+                -o-transition: none;
+                transition: none;
+                background: #0d5a94 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAuCAYAAAAyVNlIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAPnSURBVHja7JddiFVVFMd/+5xzPxoNZmy0D3q4EL5MTIJXER+SmyJ9jChDmBV9QEbRo88TPog4jh+DYKjNiyODDxoy1KQyERWlZKHQQ9lLb8akWakNCdf78e/Bdep0Zp+ZOzH1NAs2l7vW2v+19l7/vc7eThLTyCLgWeAp4FEgZ/oa8C0wDrwH3MwCcBkBFgN9wFbAAVeBr4EfgTzwEFAG7geawBDQD/w6BUlSerwq6YakuqQTklaafrGkDZJ6JHWabpWkk+Z7XdLzabzkn7yko7or5yR1mz6UtFdSTX/LHUm7JQXms0zSebMdkZRLB1go6WNJDUnbDTS2HbKJQ5IqNo6Zbl/CL5K0wzDOSGqLA7RJ+kzSpKTnUkvsltSU1O/ZykEDW5rSv2hYZyXlkTQi6XtJT3tA+iTdlrTAY2u3bdvmsfUa5uEAKAJfAGc9bHoQ+Bn4w2O7CfwCLPHYRoEvgfsC4DbwOLDR4/gT8ABwr8fWDnRaAmnZAqwGriKpKGnc9u3ljBoMZNSg7qnB1nQN4kK/b0UbMEbEtoPGmGFJ6yStTbBoT8IvJ+mAYYxKuid9DiLLqinpgnE7Pgc7JVUT56BqlHTmU5Z00ebuT9KcDAZMGENGbDKSOiStt9FhuuWSjpvvhKRNabysXtQOvA28CSwEfgAuAVesNz0MrAAeASaBw8Au4FarzS7ZTbcAG4DHjFECrgHfAGPWTW/MtpvOmQT8xzIfYD7AfID/IYCbzthqG3HOzS7Av+1PvkBBK+C+iT6dd+5MwDOtJssnTiCYTdaz2ZoYcyaUdqAX6AG6Ev4CvgPOAKeA36crcgg0UvpOu76/bv+vAV+lru8r7NIl4F27vv/Wyll4xT6BdeAEsDLxZugBnrEEAFYBJ833un1ep0hov3ngqGV0DuhO2Pfaq0Y27gC7E8ktA86b7UjiJXRXyuVym3PuI9uq7YmgAIds4hBQsXHMdPsSfhGwA2g45z4slUpFACqVStE59wkwGYbh5tTquu2J1O9Z+aAltPQf2xGGLwCTzrmxcrmcAxgGLkdR9KQHpM8uxwsyGFYDtqUNhUJhI3A5CIJ3AqCWy+U+rdfr43N1fa9Wqx+EYfh5s9lsC4CwVqs9USgUeubq+h6G4eZGo7EmiqJbdHV15Z1zp60GL2XUYCCjBnVPDV5L14BSqVR0zo1a0QaMEbEcNMYMA+uAtQkW7Un45YADxqJTf7EoRbNBy/iCcTs+BzuBauIcVI2ScesoAxdt7v4UzadILzBhDBmxyQAdwHobHaZbDhw33wlgU6tftDm7vs8ki4IgeAs4beA1axNXgLEgCN5IrMYrfw4A55yi+TWLtjUAAAAASUVORK5CYII=) no-repeat scroll 9px 12px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -19px;
+                margin-left: -21px;
+                opacity: 0;
+                filter: alpha(opacity=0);
+                -webkit-transform: scale(0, 0);
+                -ms-transform: scale(0, 0);
+                transform: scale(0, 0);
+            }
+
+            .quick-view .material-icons {
+                display: none;
+                font-size: 20px;
+                margin: 7px 10px;
+                color: #fff;
+            }
+
+            .nav-product .item-product:hover .quick-view {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                -webkit-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+
+            .nav-product .item-product .quick-view:hover {
+                background-color: #ffe11b;
+                /* background-position: 9px -19px; */
+            }
+        </style>
+        <footer id="footer-site">
+            <div class="top-footer wow fadeInUp">
+                <div class="container">
+                    <div class="item">
+                        <h3 class="title-footer">THÔNG TIN CHUNG</h3>
+                        <div class="nav-item-adress">
+                            <ul>
+                                <li><a href="" rel="nofollow"><i
+                                            class="fal fa-angle-right"></i>Giới thiệu</a>
+                                </li>
+                                <li><a href="" rel="nofollow"><i class="fal fa-angle-right"></i>Tin tức -
+                                        Cập nhật</a>
+                                </li>
+                                <li><a href="" rel="nofollow"><i
+                                            class="fal fa-angle-right"></i>Thông tin khuyến mại</a>
+                                </li>
+                                <li><a href="" rel="nofollow"><i class="fal fa-angle-right"></i>Thông tin
+                                        liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="title-footer">CHÍNH SÁCH CHUNG</h3>
+                        <div class="nav-item-adress">
+                            <ul>
+                                <li><a href="" rel="nofollow"><i
+                                            class="fal fa-angle-right"></i>Chính sách vận chuyển</a>
+                                </li>
+                                <li><a href="" rel="nofollow"><i
+                                            class="fal fa-angle-right"></i>Chính sách bảo hành</a>
+                                </li>
+                                <li><a href="" rel="nofollow"><i
+                                            class="fal fa-angle-right"></i>Chính sách đổi trả</a>
+                                </li>
+                                <li><a href="" rel="nofollow"><i
+                                            class="fal fa-angle-right"></i>Chính sách bảo mật</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="title-footer">HỖ TRỢ KHÁCH HÀNG</h3>
+                        <div class="nav-item-adress">
+                            <ul>
+                                <li><a href="" rel="nofollow"><i
+                                            class="fal fa-angle-right"></i>Hướng dẫn mua trực tuyến</a>
+                                </li>
+                                <li><a href="" rel="nofollow"><i
+                                            class="fal fa-angle-right"></i>Hướng dẫn mua trả góp</a>
+                                </li>
+                                <li><a href="" rel="nofollow"><i
+                                            class="fal fa-angle-right"></i>Hướng dẫn thanh toán</a>
+                                </li>
+                                <li><a href="" rel="nofollow"><i class="fal fa-angle-right"></i>Tư
+                                        vấn kỹ thuật</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h3 class="title-footer">Hỗ trợ khách hàng</h3>
+                        <div class="nav-item-adress">
+                            <div class="fb-page" data-href="https://www.facebook.com/vku.udn.vn"
+                                data-tabs="timeline" data-height="135" data-small-header="false"
+                                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4 class="title">Liên kết mạng xã hội</h4>
+                        <div class="nav-item-adress">
+                            <ul class="social-footer">
+                                <li><a href="https://www.facebook.com/thanhba82"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li><a href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </li>
+                                <li><a href=""><i
+                                            class="fab fa-youtube"></i></a>
+                                </li>
+                                <li><a href=""><i class="fab fa-google"></i></a>
+                                </li>
+                            </ul>
+                           
+                        </div>
+                        <div class="tb">
+                            <a href="">
+                                <img src="public/images/products/tb.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="band-logo wow fadeInUp">
+                <div class="container">
+                    <div class="slider-logo owl-carousel">
+                        <div class="item">
+                            <a href=""><img src="public/images/doi-tac/aorus-logo-228x228.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><img src="public/images/doi-tac/1280px-intel-logo.svg.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><img src="public/images/doi-tac/cooler-master-logo-png-3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><img src="public/images/doi-tac/corsair1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><img src="public/images/doi-tac/dctaxly2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><img src="public/images/doi-tac/amd.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><img src="public/images/doi-tac/nvidia-logo2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><img src="public/images/doi-tac/msi.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><img src="public/images/doi-tac/42226369.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom wow fadeInUp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a href="" class="logo-footer">
+                                <img src="public/images/logo/LOGOCHINH2.png"
+                                    alt="logo">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="title-footer">
+                                THANH BA CUMPUTER </div>
+                            <div class="nav-bottom">
+                                <p><span>Địa chỉ ĐKKD: </span>Hòa Quý - Ngũ Hành Sơn - Đà Nẵng</p>
+                                <p><span>Địa chỉ kinh doanh: </span>Hòa Quý - Ngũ Hành Sơn - Đà Nẵng</p>
+                                <p style="color:#fff!important"><span>Điện thoại: </span>0702.602.635</p>
+                                <p><span>Email: </span>thanhba18102002@gmail.com</p>
+                                <p><span>Hotline: </span>0702.602.635</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="map-footer">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18501.830410447197!2d108.26658557411125!3d15.97572693420445!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCAtIEjDoG4!5e0!3m2!1svi!2s!4v1652966521466!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                    width="100%" height="180" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="copy-right">
+                <div class="container">
+                    <div class="wp-copy text-center" style="color:#fff">
+                        Mã số thuế: 000000000000 - Do sở kế hoạch và đầu tư thành phố Đà Nẵng.
+                </div>
+            </div>
+        </footer>
+
+        <div class="holine-footer">
+            <div class="holine-footer1">
+                <span class="title-holine">Hotline</span>
+                <a href=""><span class="holine-phone">0702.602.635</span></a>
+            </div>
+
+
+        </div>
+        <style type="text/css" media="screen">
+            .wp-copy.text-center {
+                text-align: center;
+            }
+
+            .holine-footer1:after {
+                content: "";
+            }
+
+            .copy-right {
+                width: 100%;
+                display: inline-block;
+                background: #111111;
+                height: 44px;
+                line-height: 44px;
+                text-align: center;
+                font-size: 14px;
+                color: #bdbdbd;
+                margin: 0;
+                padding: 0;
+            }
+
+            .right-pc-position {
+                position: fixed;
+                bottom: 40%;
+                right: 10px;
+                z-index: 99999999;
+            }
+
+            @media (max-width: 1500px) {
+                .right-pc-position {
+                    position: fixed;
+                    bottom: 10%;
+                    right: 10px;
+                    z-index: 99999999;
+                }
+            }
+
+            .right-pc-position ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+            }
+
+            .right-pc-position ul li {
+                padding-bottom: 10px;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                margin-bottom: 5px;
+            }
+
+            .right-pc-position ul.social-footer li i {
+                color: #000;
+                color: #fff;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                position: absolute;
+                padding: 5px 9px;
+            }
+
+            .right-pc-position ul li .fa-facebook-f {
+                background: #3B5997;
+            }
+
+            .right-pc-position ul li .fa-twitter {
+                background: #00ACF0;
+            }
+
+            .right-pc-position ul li .fa-instagram {
+                background: #447397;
+            }
+
+            .right-pc-position ul li .fa-youtube {
+                background: #D12E2E;
+            }
+
+            .right-pc-position ul li .fa-google {
+                background: #DB4F48;
+
+            }
+
+            body #divBannerFloatLeft {
+                padding-right: 10px;
+            }
+
+            body #divBannerFloatRight {
+                padding-left: 10px;
+            }
+
+            .fillter_bl .content_fillter [class^="group-fillter fill-key-"] .attribute-title:after {}
+        </style>
+        <div class="right-pc-position">
+            <ul class="social-footer">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li><a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li><a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href=""><i
+                            class="fab fa-youtube"></i></a>
+                </li>
+                <li><a href=""><i class="fab fa-google"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div id="btn-top">
+            <img src="public/images/products/btn-top.png" alt="">
+        </div>
+        <div class="adfloat" id="divBannerFloatLeft">
+            <p>
+                <a href="" target="_blank"><img src="public/images/products/quangcaoleft.gif" alt="">
+                </a>
+            </p>
+        </div>
+        <div class="adfloat" id="divBannerFloatRight">
+            <p>
+                <a href="" target="_blank"><img src="public/images/products/quangcaoleft.gif" alt="">
+                </a>
+            </p>
+        </div>
+        <style type="text/css" media="screen">
+            i.fa.fa-plus.css-icon-plus.show:before {
+                content: "\f107";
+            }
+
+            .fillter_bl .content_fillter [class^="group-fillter fill-key-"] .attribute-title:after,
+            .fa.fa-plus.css-icon-plus:before {
+                content: "\f105";
+                font-weight: bold;
+            }
+
+            .fillter_bl .content_fillter [class^="group-fillter fill-key-"] .attribute-title.show:after {
+                content: "\f107";
+            }
+        </style>
+        <script type="text/javascript" charset="utf-8" async defer>
+            $('#main-menu1 > ul > li').attr('style', 'width: calc(100% / ' + $('#main-menu1 > ul > li').length + ')');
+
+            if (jQuery(window).width() <= 768) {
+                $('.main-slider').attr('style', "padding-top: " + $('.nav-category-home.hello').height() + "px");
+                $('.css-icon-plus').click(function () {
+                    if (jQuery(this).next().css('display') == 'none') {
+
+                        jQuery(this).next().attr('style', 'opacity: 1;display: block;visibility: inherit;position: inherit;left: 0px;');
+
+                        // jQuery(this).next().css('display','block');
+
+                        jQuery(this).addClass('show');
+
+                    } else {
+
+                        jQuery(this).next().attr('style', 'opacity: 0;display: none;visibility: hidden;position: absolute;');
+                        // jQuery(this).next().css('display','none');
+
+                        jQuery(this).removeClass('show');
+
+                    }
+                    // $(this).parent().find('.vertical-dropdown-menu').attr('style', 'opacity: 1;display: block;visibility: inherit;');
+                });
+            }
+            jQuery('.fillter_bl .content_fillter [class^="group-fillter fill-key-"] .attribute-title').click(function (e) {
+
+                e.preventDefault();
+
+                if (jQuery(this).next().css('display') == 'none') {
+
+                    jQuery(this).next().css('display', 'block');
+
+                    jQuery(this).addClass('show');
+
+                } else {
+
+                    jQuery(this).next().css('display', 'none');
+
+                    jQuery(this).removeClass('show');
+
+                }
+
+                return false;
+
+            });
+
+
+    // jQuery(window).resize(function() {
+    //     if(jQuery(window).width() <= 768){
+    //         jQuery('.fillter_bl .content_fillter [class^="group-fillter fill-key-"] .attribute-title').click(function(e){
+
+    //             e.preventDefault();
+
+    //             if(jQuery(this).next().css('display') == 'none'){
+
+    //                 jQuery(this).next().css('display','block');
+
+    //                 jQuery(this).addClass('show');
+
+    //             }else{
+
+    //                 jQuery(this).next().css('display','none');
+
+    //                 jQuery(this).removeClass('show');
+
+    //             }
+
+    //             return false;
+
+    //         });
+    //     }
+    // });
+        </script>
+        <div id="show_success_mss" style="position: fixed; top: 150px; right: 20px;z-index: 99999">
+            <!--  -->
+        </div>
+
+
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    xfbml: true,
+                    version: 'v4.0'
+                });
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your customer chat code -->
+        <div class="fb-customerchat" attribution=setup_tool page_id="165562137174332">
+        </div>
+
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '893478067706055');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+                src="https://www.facebook.com/tr?id=893478067706055&ev=PageView&noscript=1" /></noscript>
+        <!-- End Facebook Pixel Code -->
+
+        <div id="modal-cart" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" style="max-width:768px;">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div class="cart-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="public/js/wow.min.js"></script>
+    <script type="text/javascript" src="public/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="public/js/BannerFloat.js"></script>
+    <!-- <script type="text/javascript" src="public/js/cloud-zoom.js"></script> -->
+    <script src="public/js/hc-offcanvas-nav.js?ver=3.3.0"></script>
+    <script type="text/javascript" src="public/js/buong.js"></script>
+    <script>
+        //hieu ung wow------------------------------------------
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100,
+            callback: function (box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        });
+        wow.init();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.ajax-addtocart').click(function () {
+                var product = $(this);
+                $.post('products/ajax/cart/addtocart.html', {
+                    id: product.attr('data-id'),
+                    quantity: product.attr('data-quantity'),
+                }, function (data) {
+                    if (product.attr('data-redirect') == 'redirect') {
+                        window.location.href = BASE_URL + 'dat-mua' + '.html';
+                    } else {
+                        var json = JSON.parse(data);
+                        $('#modal-cart .cart-content').html(json.html);
+                        $('.cart-item .count').html(json.item);
+                        $('#total-cart').html(json.item);
+                        $('#modal-cart').modal('toggle');
+                    }
+                });
+                return false;
+            });
+            if ($('.btn-up')) {
+                $('.btn-up').click(function () {
+                    var $_input = $(this).parent().find('.quantity');
+                    var quantity = parseInt($_input.val());
+                    if (quantity <= 1) {
+                        quantity = 1;
+                    } else {
+                        quantity -= 1;
+                    }
+                    $_input.val(quantity);
+                    $('.action-button.ajax-addtocart').attr('data-quantity', quantity);
+                });
+            }
+            if ($('.btn-down')) {
+                $('.btn-down').click(function () {
+                    var $_input = $(this).parent().find('.quantity');
+                    var quantity = parseInt($_input.val());
+                    quantity += 1;
+                    $_input.val(quantity);
+                    $('.action-button.ajax-addtocart').attr('data-quantity', quantity);
+                });
+            }
+            $(document).on('click', '#ec-module-cart .augment', function () {
+                var item = $(this);
+                var quantity = parseInt($(this).parent().find('.quantity').val());
+                quantity = quantity + 1;
+                item.parent().find('.quantity').val(quantity);
+                ajax_cart_update();
+                return false;
+            });
+            $(document).on('click', '#ec-module-cart .abate', function () {
+                $(".panel-foot1").hide();
+                $(".panel-foot2").show();
+            })
+            $(document).on('click', '#ec-module-cart .augment', function () {
+                $(".panel-foot1").hide();
+                $(".panel-foot2").show();
+            })
+            $(document).on('click', '#ec-module-cart .abate', function () {
+                var item = $(this);
+                var quantity = parseInt($(this).parent().find('.quantity').val());
+                if (quantity <= 1) {
+                    quantity = 1
+                } else {
+                    quantity = quantity - 1;
+                }
+                item.parent().find('.quantity').val(quantity);
+                ajax_cart_update();
+                return false;
+            });
+
+            $(document).on('click', '#ec-module-cart .delete', function () {
+                var item = $(this);
+                item.parent().parent().parent().parent().parent().find('.quantity').val(0);
+                item.parent().parent().parent().parent().parent().addClass('uk-hidden').removeClass('item');
+                ajax_cart_update();
+                return false;
+            });
+            $(document).on('click', '#ec-module-cart .delete', function () {
+                $(".panel-foot1").hide();
+                $(".panel-foot2").show();
+            })
+            $(document).on('click', '.ec-cart-continue', function () {
+                UIkit.modal('#modal-cart').hide();
+                return false;
+            });
+
+            $('.augment').click(function () {
+                var num_order = parseInt($(this).parent().find('.quantity').val());
+                num_order += 1;
+                $(this).parent().find('.quantity').val(num_order);
+            });
+            $('.abate').click(function () {
+                var cart_class = $(this).attr('data-cart');
+                var num_order = parseInt($(this).parent().find('.quantity').val());
+                if (num_order <= 1) {
+                    num_order = 1
+                } else {
+                    num_order -= 1;
+                }
+                $(this).parent().find('.quantity').val(num_order);
+            });
+
+            $(document).on('click', '.delete_item', function () {
+                var item = $(this);
+                var idprd = item.parent().parent().parent().parent().find('.quantity').val();
+                ajax_cart_update1(idprd);
+                return false;
+            });
+
+        });
+        function ajax_cart_update1(idprd) {
+            $.post('products/ajax/cart/deletecart.html', { idprd: idprd }, function (data) {
+                window.location.href = 'dat-mua.html';
+            });
+        }
+
+        function ajax_cart_update() {
+            $.post('products/ajax/cart/updatetocart.html', $('#ajax-cart-form').serialize(), function (data) {
+                var price = JSON.parse(data);
+                $('#ajax-cart-form').html(price.html);
+                $('#total-cart').html(price.item);
+            });
+            return false;
+        }
+        $(function () {
+            $('.label-star').on('click', function () {
+                var value = $(this).attr('data-value');
+                $('#hidden_star').attr('data-star', value);
+            });
+
+            $('#commentForm').on('submit', function () {
+                var postData = $(this).serializeArray();
+                var formURL = $(this).attr('action');
+                var fullname = $('#fullname').val();
+                var phone = $('#phone').val();
+                var message = $('#message').val();
+                var star = $('#hidden_star').attr('data-star');
+                var module = $('#hidden_star').attr('data-module');
+                var moduleid = $('#hidden_star').attr('data-module-id');
+                var html = '';
+                $.post(formURL, {
+                    post: postData,
+                    fullname: fullname,
+                    phone: phone,
+                    message: message,
+                    star: star,
+                    module: module,
+                    moduleid: moduleid
+                },
+                    function (data) {
+                        var json = JSON.parse(data);
+                        if (json.error.length > 0) {
+                            $('.validate_error').html(json.error);
+                        } else {
+                            $('#commentlist').html(json.result);
+                        }
+                        return false;
+                    });
+                return false;
+            });
+        });
+        //end
+
+        $(document).ready(function () {
+            var time;
+            $('.keyword').on('keyup', function () {
+                var keyword = $(this).val();
+                var numberKey = keyword.length;
+                if (numberKey >= 2) {
+                    clearTimeout(time);
+                    time = setTimeout(function () {
+                        $.ajax({
+                            url: 'searchs/ajax/searchs/search',
+                            method: 'POST',
+                            dataType: 'JSON',
+                            data: { keyword: keyword },
+                            complete: function (data) {
+                                console.log(data.responseText);
+                                if (data.responseText.length > 0) {
+                                    $('.header .searchResult').show();
+                                    $('.header .searchResult').html(data.responseText);
+                                }
+
+                            }
+                        });
+                    }, 100);
+                } else {
+                    $('.header .searchResult').hide();
+                }
+            });
+        });
+
+    </script>
+    <script>
+        var loader= document.getElementById("preloader")
+        window.addEventListener("load",function(){
+            loader.style.display="none";
+        })
+    </script>
+    <style type="text/css">
+        .buynow-2 {
+            max-width: 740px;
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        .buynow-2 .panel-head.mb15 {
+            padding-right: 15px;
+            margin-bottom: 20px;
+        }
+
+        .buynow-2 .heading {
+            position: relative;
+            cursor: pointer;
+            padding-left: 40px;
+            line-height: 0;
+            margin: 0;
+        }
+
+        .buynow-2 .heading:before {
+            content: "";
+            position: absolute;
+            width: 22px;
+            height: 20px;
+            left: 10px;
+            top: 0;
+            background-image: url(templates/backend/images/spritesheet.png);
+            background-repeat: no-repeat;
+            background-position: -459px -360px
+        }
+
+        .buynow-2 .heading .text {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 600;
+            color: #555
+        }
+
+        .buynow-2 .heading .text:hover {
+            color: #0388cd
+        }
+
+        .buynow-2 .panel-body {
+            padding: 0;
+        }
+
+        .buynow-2 .list-cart-heading {
+            width: 100%;
+            background: #f7f7f7;
+            font-size: 12px;
+            color: #333;
+            padding: 0
+        }
+
+        .buynow-2 .list-cart-heading .item {
+            float: left;
+            padding: 10px 15px;
+            text-transform: none;
+            font-weight: bold
+        }
+
+        .buynow-2 .list-cart-heading .item+.item {
+            border-left: 1px solid #fff
+        }
+
+        .buynow-2 .list-cart-heading .product,
+        .buynow-2 .list-order .product {
+            width: 330px
+        }
+
+        .buynow-2 .list-cart-heading .price,
+        .buynow-2 .list-order .price {
+            width: 130px
+        }
+
+        .buynow-2 .list-cart-heading .count,
+        .buynow-2 .list-order .count {
+            width: 114px
+        }
+
+        .buynow-2 .list-cart-heading .prices,
+        .buynow-2 .list-order .prices {
+            width: 130px
+        }
+
+        .buynow-2 .list-order>.item {
+            padding: 15px 0
+        }
+
+        .buynow-2 .list-order>.item+.item {
+            border-top: 1px dotted #ccc
+        }
+
+        .buynow-2 .list-order .product .thumb {
+            width: 80px;
+            border: 1px solid #d8d8d8
+        }
+
+        .buynow-2 .list-order .price,
+        .buynow-2 .list-order .prices {
+            padding-right: 15px;
+            font-size: 12px;
+            font-weight: 700
+        }
+
+        .buynow-2 .list-order .prices span {
+            font-size: 12px;
+            margin-bottom: 5px;
+            display: block
+        }
+
+        .buynow-2 .list-order .prices span.old {
+            text-decoration: line-through;
+            font-weight: normal;
+            color: #777;
+            font-style: italic;
+        }
+
+        .buynow-2 .list-order .prices span.saleoff {
+            color: #fff;
+            padding: 5px;
+            display: inline-block;
+            background-color: #c80000;
+            border-radius: 5px;
+            font-size: 11px;
+        }
+
+        .buynow-2 .list-order .list-item-cart>* {
+            float: left
+        }
+
+        .buynow-2 .list-order .product .info {
+            width: 250px;
+            padding: 0 15px
+        }
+
+        .buynow-2 .list-order .product .info .title {
+            font-size: 13px;
+            line-height: 18px;
+            font-weight: 700
+        }
+
+        .buynow-2 .list-order .product .info .title .link {
+            color: #333;
+            font-size: 12px
+        }
+
+        .buynow-2 .list-order .product .info .title .link:hover {
+            color: #0388cd
+        }
+
+        .buynow-2 .list-order .product .delete {
+            border: none;
+            background: #fff;
+            font-size: 11px;
+            color: #6f0600;
+            cursor: pointer;
+            padding: 0
+        }
+
+        .buynow-2 .list-order .product .delete i {
+            color: #959595;
+            margin-right: 5px
+        }
+
+        .buynow-2 .list-order .price .old {
+            text-decoration: line-through;
+            color: #959595;
+            font-weight: 400
+        }
+
+        .buynow-2 .list-order .price .saleoff {
+            color: #d60c0c;
+            font-weight: 400
+        }
+
+        .buynow-2 .list-order .count {
+            text-align: center
+        }
+
+        .buynow-2 .list-order .count>* {
+            display: inline-block;
+            position: relative;
+        }
+
+        .buynow-2 .list-order .count .btns {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #dfdfdf;
+            top: 0;
+            cursor: pointer
+        }
+
+        .buynow-2 .list-order .count .abate:before,
+        .buynow-2 .list-order .count .augment:before {
+            width: 12px;
+            height: 2px;
+            margin: 14px auto;
+            content: "";
+            display: block
+        }
+
+        .buynow-2 .list-order .count .abate {
+            left: -30px;
+            border-right: none
+        }
+
+        .buynow-2 .list-order .count .abate:before {
+            background: #ccc
+        }
+
+        .buynow-2 .list-order .count .augment {
+            right: -30px;
+            border-left: none
+        }
+
+        .buynow-2 .list-order .count .augment:before {
+            background: #288ad6
+        }
+
+        .buynow-2 .list-order .count .augment:after {
+            content: "";
+            width: 2px;
+            height: 12px;
+            background: #288ad6;
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            top: 9px;
+            left: 0;
+            right: 0
+        }
+
+        .buynow-2 .list-order .count .quantity {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            font-size: 12px;
+            border: 1px solid #dfdfdf
+        }
+
+        .buynow-2 .panel-foot {
+            padding: 15px 0px 0;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333;
+            border-top: 1px solid #eee
+        }
+
+        .buynow-2 .panel-foot .total .price strong {
+            color: #d60c0c
+        }
+
+        .buynow-2 .panel-foot .total p {
+            font-size: 13px
+        }
+
+        .buynow-2 .panel-foot .action .continue {
+            font-size: 13px;
+            color: #0388cd;
+            background-color: #f8f8f8;
+            border: 1px solid #e8e8e8;
+            line-height: 30px;
+            padding: 0 10px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .buynow-2 .panel-foot .action .purchase {
+            display: block;
+            position: relative;
+            padding: 8px 40px 8px 20px;
+            background: #d60c0c;
+            color: #fff;
+            border: none;
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            border-radius: 4px
+        }
+
+        .buynow-2 .panel-foot .action .purchase:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 12px;
+            height: 8px;
+            background: url(templates/backend/images/spritesheet.png) -264px -81px no-repeat;
+            top: 14px;
+            right: 15px
+        }
+
+        #scrrolbar {
+            max-height: 320px
+        }
+
+        #scrrolbar::-webkit-scrollbar {
+            height: 100%;
+            width: 6px
+        }
+
+        #scrrolbar::-webkit-scrollbar-thumb {
+            background: #ccc;
+            height: 10px;
+            width: 7px;
+            border-radius: 3px
+        }
+
+        #modal-cart .uk-modal-dialog {
+            width: 740px !important;
+            padding: 20px 0 10px !important
+        }
+
+        #modal-cart .uk-modal-dialog>.uk-close:first-child {
+            margin: -16px -15px 0 0
+        }
+
+        .action.uk-flex.uk-flex-middle.uk-flex-space-between {
+            width: 100%;
+        }
+
+        .cart-scrrolbar {
+            max-height: 320px;
+            overflow: auto;
+        }
+
+        .cart-scrrolbar::-webkit-scrollbar {
+            height: 100%;
+            width: 6px;
+        }
+
+        .cart-scrrolbar::-webkit-scrollbar-thumb {
+            background: #ccc;
+            height: 10px;
+            width: 7px;
+            border-radius: 3px;
+        }
+
+        #scrollbar {
+            min-width: 700px;
+        }
+
+        .mt-scaledown,
+        .mt-scaledown img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .mt-scaledown img {
+            object-fit: scale-down
+        }
+
+        #modal-cart .modal-dialog {
+            margin: 0;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .mt-flex {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex
+        }
+
+        .mt-flex-middle {
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center
+        }
+
+        .mt-flex-bottom {
+            -ms-flex-align: end;
+            -webkit-align-items: flex-end;
+            align-items: flex-end
+        }
+
+        .mt-flex-center {
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center
+        }
+
+        .mt-flex-right {
+            -ms-flex-pack: end;
+            -webkit-justify-content: flex-end;
+            justify-content: flex-end
+        }
+
+        .mt-flex-space-between {
+            -ms-flex-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between
+        }
+
+        .mt-clearfix:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .mt-clearfix {
+            clear: both;
+            padding: 0
+        }
+
+        .uk-list li {
+            list-style: none;
+        }
+    </style>
+
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=456763814831300&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+</body>
+
+</html>
